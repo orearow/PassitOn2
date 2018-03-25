@@ -1,4 +1,4 @@
-package com.example.oreoluwa.passiton;
+package com.example.sahot.passiton;
 
 import org.junit.Test;
 

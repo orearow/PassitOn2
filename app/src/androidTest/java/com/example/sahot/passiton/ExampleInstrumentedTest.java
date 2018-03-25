@@ -1,4 +1,4 @@
-package com.example.oreoluwa.passiton;
+package com.example.sahot.passiton;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.oreoluwa.passiton", appContext.getPackageName());
+        assertEquals("com.example.sahot.passiton", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.example.oreoluwa.passiton;
+package com.example.sahot.passiton;
 
 import android.annotation.SuppressLint;
 import android.support.v7.app.ActionBar;

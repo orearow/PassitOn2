@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.oreoluwa.passiton.LoginActivity">
+    tools:context="com.example.sahot.passiton.PassItOn">
 
     <!-- Login progress -->
     <ProgressBar
@@ -66,49 +66,55 @@
 
             <Button
                 android:id="@+id/email_sign_in_button"
+                style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:backgroundTint="#ffb16d"
-                android:text="Sign in"
+                android:padding="15dp"
+                android:text="Log In"
                 android:textStyle="bold" />
-
 
             <TextView
                 android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
+                android:text="---or---" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="----------------Or----------------" />
-
-
-
-
-
-
-            <ImageView
-                android:id="@+id/facebook"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:background="@drawable/facebook" />
 
             <ImageButton
                 android:id="@+id/google"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/google"
-                />
+                android:background="@drawable/google" />
 
-            <ImageView
+
+            <ImageButton
                 android:id="@+id/twitter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/twitter" />
+            <Button
+                android:id="@+id/email_sign_up_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/twitter"/>
+                android:backgroundTint="#ffb16d"
+                android:padding="15dp"
+                android:text="Sign Up"
+                android:textStyle="bold" />
+
 
         </LinearLayout>
+
+
     </ScrollView>
 </LinearLayout>
