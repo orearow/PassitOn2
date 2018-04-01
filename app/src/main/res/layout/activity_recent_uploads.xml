@@ -4,18 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sahot.passiton.RecentUploads"
-    android:background=""
+    tools:context="com.example.sahot.passiton.RecentUploads">
 
-
-
-    >
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Recent Uploads"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="487dp"
-        android:layout_height="572dp"
-        app:srcCompat="@drawable/TechnovationLogo"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:id="@+id/imageButton5"
+        android:layout_width="187dp"
+        android:layout_height="306dp"
+        android:background="@null"
+        app:srcCompat="@drawable/sketchoneab"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    
+
 </android.support.constraint.ConstraintLayout>
