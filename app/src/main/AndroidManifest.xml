@@ -51,7 +51,10 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".FindNew" />
+        <activity android:name=".culturalwear" />
+        <activity android:name=".pictures_cultural"></activity>
     </application>
 
 </manifest>
