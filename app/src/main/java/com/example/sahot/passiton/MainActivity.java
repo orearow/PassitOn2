@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, share.class));
+                //startActivity(new Intent(MainActivity.this, RecentUploads.class));
             }
         });
 
