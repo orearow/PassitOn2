@@ -9,5 +9,9 @@ public class FindNew extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_new);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.technovationlogo);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
     }
 }
