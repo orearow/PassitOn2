@@ -1,6 +1,7 @@
 package com.example.sahot.passiton;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        ImageButton btn = (ImageButton)findViewById(R.id.preetsbutton);
+        FloatingActionButton btn = (FloatingActionButton) findViewById(R.id.share_button);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,15 +29,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button share = (Button)findViewById(R.id.share);
+        FloatingActionButton recent_upload = (FloatingActionButton) findViewById(R.id.recent_upload_button);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        recent_upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, share.class));
+                //startActivity(new Intent(MainActivity.this, RecentUploads.class));
             }
         });
 
+
+        FloatingActionButton findNewButton = (FloatingActionButton) findViewById(R.id.find_new_button);
+
+        findNewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FindNew.class));
+            }
+        });
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.technovationlogo);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
 
 
     }

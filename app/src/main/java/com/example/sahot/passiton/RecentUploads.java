@@ -9,5 +9,9 @@ public class RecentUploads extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recent_uploads);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.technovationlogo);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
     }
 }

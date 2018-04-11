@@ -6,11 +6,4 @@
     android:layout_height="match_parent"
     tools:context="com.example.sahot.passiton.share">
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="183dp"
-        android:layout_height="202dp"
-        app:srcCompat="@drawable/accounticon"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="90dp" />
 </android.support.constraint.ConstraintLayout>
