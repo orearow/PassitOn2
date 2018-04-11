@@ -15,20 +15,4 @@
         tools:layout_editor_absoluteX="57dp"
         tools:layout_editor_absoluteY="3dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="137dp"
-        android:layout_height="187dp"
-        app:srcCompat="@drawable/sherwani"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="102dp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="136dp"
-        android:layout_height="70dp"
-        android:text="Description:"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="296dp" />
 </android.support.constraint.ConstraintLayout>
