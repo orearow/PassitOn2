@@ -8,6 +8,6 @@ public class RecentUploadsDescriptionOpen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recent_description_open);
+        setContentView(R.layout.activity_recent_uploads_description_open);
     }
 }
