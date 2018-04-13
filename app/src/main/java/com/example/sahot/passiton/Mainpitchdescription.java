@@ -5,25 +5,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
-public class RecentUploadsDescriptionOpen extends AppCompatActivity {
+public class Mainpitchdescription extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recent_uploads_description_open);
+        setContentView(R.layout.activity_mainpitchdescription);
 
-
-        Button newButton = (Button) findViewById(R.id.button8);
+        Button newButton = (Button) findViewById(R.id.button9);
 
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RecentUploadsDescriptionOpen.this, Mainpitchdescription.class));
-                //startActivity(new Intent(MainActivity.this, RecentUploads.class));
+                startActivity(new Intent(Mainpitchdescription.this, Contactowner.class));
+                //startActivity(new Intent(Mainpitchdescription.this, Contactowner.class));
             }
         });
-
 
 
 

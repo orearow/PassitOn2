@@ -53,7 +53,9 @@
         <activity android:name=".culturalwear" />
         <activity android:name=".pictures_cultural" />
         <activity android:name=".share" />
-        <activity android:name=".RecentUploadsDescriptionOpen"></activity>
+        <activity android:name=".RecentUploadsDescriptionOpen" />
+        <activity android:name=".Mainpitchdescription" />
+        <activity android:name=".Contactowner"></activity>
     </application>
 
 </manifest>
