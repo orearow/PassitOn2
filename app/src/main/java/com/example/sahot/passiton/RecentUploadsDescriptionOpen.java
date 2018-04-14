@@ -4,32 +4,25 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
 
-public class RecentUploads extends AppCompatActivity {
+public class RecentUploadsDescriptionOpen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recent_uploads);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setLogo(R.drawable.technovationlogo);
-        getSupportActionBar().setDisplayUseLogoEnabled(true);
+        setContentView(R.layout.activity_recent_uploads_description_open);
 
 
-
-
-        ImageButton newButton = (ImageButton) findViewById(R.id.imageButton5);
+        Button newButton = (Button) findViewById(R.id.button8);
 
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RecentUploads.this, RecentUploadsDescriptionOpen.class));
+                startActivity(new Intent(RecentUploadsDescriptionOpen.this, Mainpitchdescription.class));
                 //startActivity(new Intent(MainActivity.this, RecentUploads.class));
             }
         });
-
-
 
 
 
