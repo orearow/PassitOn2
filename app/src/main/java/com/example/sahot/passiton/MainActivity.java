@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         recent_upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, share.class));
+                startActivity(new Intent(MainActivity.this, RecentUploads.class));
                 //startActivity(new Intent(MainActivity.this, RecentUploads.class));
             }
         });
@@ -51,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.technovationlogo);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.accounticon);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
 
 
     }

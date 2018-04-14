@@ -38,7 +38,8 @@
             android:id="@+id/share_button"
             android:layout_width="149dp"
             android:layout_height="141dp"
-            android:src="@android:color/transparent" />
+            android:src="@android:color/transparent"
+            app:backgroundTint="@color/colorPrimary" />
 
     </FrameLayout>
 
@@ -55,7 +56,7 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.106">
 
         <TextView
             android:layout_width="wrap_content"
@@ -74,7 +75,8 @@
             android:layout_width="149dp"
             android:layout_height="141dp"
 
-            android:src="@android:color/transparent" />
+            android:src="@android:color/transparent"
+            app:backgroundTint="@color/colorPrimary" />
     </FrameLayout>
 
     <FrameLayout
@@ -107,7 +109,10 @@
             android:id="@+id/find_new_button"
             android:layout_width="149dp"
             android:layout_height="141dp"
-            android:src="@android:color/transparent" />
+            android:src="@android:color/transparent"
+            app:backgroundTint="@color/colorPrimary" />
+
+
     </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>
