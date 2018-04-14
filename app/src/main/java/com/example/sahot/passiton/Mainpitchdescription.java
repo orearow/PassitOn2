@@ -24,7 +24,7 @@ public class Mainpitchdescription extends AppCompatActivity {
             }
         });
 
-
+        startActivity(new Intent(PassItOn.this,MainActivity.class));
 
 
     }

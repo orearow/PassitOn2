@@ -52,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setLogo(R.drawable.technovationlogo);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.accounticon);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+
 
     }
 }

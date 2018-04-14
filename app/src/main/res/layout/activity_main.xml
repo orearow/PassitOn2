@@ -111,6 +111,8 @@
             android:layout_height="141dp"
             android:src="@android:color/transparent"
             app:backgroundTint="@color/colorPrimary" />
+
+
     </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>

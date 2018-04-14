@@ -115,6 +115,12 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0" />
 
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="321dp"
+                app:srcCompat="@drawable/locationmapone" />
+
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
