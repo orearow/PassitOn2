@@ -348,6 +348,8 @@ public class PassItOn extends AppCompatActivity implements LoaderCallbacks<Curso
             mAuthTask = null;
             showProgress(false);
         }
+
+
     }
 }
 

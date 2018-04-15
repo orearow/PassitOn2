@@ -32,7 +32,7 @@ public class RecentUploads extends AppCompatActivity {
 
 
 
-
+        getSupportActionBar().setTitle("Pass It On");
 
 
     }

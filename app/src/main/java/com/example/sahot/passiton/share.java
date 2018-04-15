@@ -39,6 +39,9 @@ public class share extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         Bitmap bitmap = (Bitmap)data.getExtras().get("data");
         camera_image_view.setImageBitmap(bitmap);
+
+
+        getSupportActionBar().setTitle("Pass It On");
     }
 
 

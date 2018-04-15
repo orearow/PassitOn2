@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,14 +50,19 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, FindNew.class));
             }
         });
+
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.technovationlogo);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.drawable.accounticon);
-        getSupportActionBar().setDisplayShowCustomEnabled(true);
+
+        getSupportActionBar().setTitle("Pass It On");
+
+
 
 
     }
-}
+
+
+
+    }

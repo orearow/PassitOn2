@@ -15,6 +15,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.412"
@@ -86,7 +87,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="#ffb16d"
-        android:text="grad wear"
+        android:text="children's costumes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
@@ -104,7 +105,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="#ffb16d"
-        android:text="children suits"
+        android:text="Maternity wear"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.102"
@@ -122,7 +123,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="#ffb16d"
-        android:text="uiform"
+        android:text="uniforms"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
@@ -130,12 +131,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.978" />
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="94dp" />
+
 
 </android.support.constraint.ConstraintLayout>

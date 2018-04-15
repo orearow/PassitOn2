@@ -13,6 +13,8 @@ public class RecentUploadsDescriptionOpen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recent_uploads_description_open);
 
+        getSupportActionBar().setTitle("Pass It On");
+
 }
         };
 
