@@ -20,6 +20,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -29,6 +30,12 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +46,7 @@ import static android.Manifest.permission.READ_CONTACTS;
  * A login screen that offers login via email/password.
  */
 public class PassItOn extends AppCompatActivity implements LoaderCallbacks<Cursor> {
-
+    private FirebaseAuth mAuth;
     /**
      * Id to identity READ_CONTACTS permission request.
      */
@@ -65,6 +72,7 @@ public class PassItOn extends AppCompatActivity implements LoaderCallbacks<Curso
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        mAuth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pass_it_on);
         // Set up the login form.
@@ -144,6 +152,31 @@ public class PassItOn extends AppCompatActivity implements LoaderCallbacks<Curso
      * If there are form errors (invalid email, missing fields, etc.), the
      * errors are presented and no actual login attempt is made.
      */
+
+
+
+    private void register(String email, String password) {
+        mAuth.createUserWithEmailAndPassword(email,password);
+
+        System.out.print("okkkkkkk!!!!!!!!!!!!!!!!");
+        mAuth.createUserWithEmailAndPassword(email,password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
+
+                            startActivity(new Intent(PassItOn.this,MainActivity.class));
+
+                        } else{
+                            Toast.makeText(PassItOn.this, "cant", Toast.LENGTH_LONG);
+                            Log.d("FirebaseAuth", "onComplete" + task.getException().getMessage());                            startActivity(new Intent(PassItOn.this,share.class));
+
+                        }
+                    }
+                });
+
+    }
+
     private void attemptLogin() {
         if (mAuthTask != null) {
             return;
@@ -188,7 +221,7 @@ public class PassItOn extends AppCompatActivity implements LoaderCallbacks<Curso
             showProgress(true);
             mAuthTask = new UserLoginTask(email, password);
             mAuthTask.execute((Void) null);
-
+            register(email, password);
             startActivity(new Intent(PassItOn.this,MainActivity.class));
         }
     }
