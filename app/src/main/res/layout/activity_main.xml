@@ -7,7 +7,6 @@
     android:background="@drawable/ilfullxfull"
     tools:context="com.example.sahot.passiton.MainActivity">
 
-
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,10 +58,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.106">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="16dp"
+            android:text="Recent Uploads"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="113dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/recent_upload_button"
+            android:layout_width="149dp"
+            android:layout_height="141dp"
+
+            android:src="@android:color/transparent"
+            app:backgroundTint="@color/colorPrimary" />
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frameLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
@@ -97,42 +114,5 @@
 
 
     </FrameLayout>
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/recent_upload_button"
-        android:layout_width="149dp"
-        android:layout_height="141dp"
-
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="136dp"
-        android:src="@android:color/transparent"
-        app:backgroundTint="@color/colorPrimary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.216" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:elevation="16dp"
-        android:text="Recent Uploads"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444" />
 
 </android.support.constraint.ConstraintLayout>
