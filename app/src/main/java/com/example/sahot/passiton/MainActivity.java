@@ -91,4 +91,22 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+//
+//        if (id == R.id.gea) {
+//            startActivity(new Intent(MainActivity.this, SettingsActivity.class));
+//
+//        }
+
+        if (id == R.id.action_favorite) {
+            startActivity(new Intent(MainActivity.this, SettingsActivity.class));
+
+        }
+
+        return super.onOptionsItemSelected(item);
     }
+
+}

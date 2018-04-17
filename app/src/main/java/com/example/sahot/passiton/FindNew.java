@@ -19,16 +19,11 @@ public class FindNew extends AppCompatActivity {
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FindNew.this, Culturalquestions.class));
+                startActivity(new Intent(FindNew.this, pictures_cultural.class));
                 //startActivity(new Intent(Mainpitchdescription.this, Contactowner.class));
-
-
-
-
             }
         });
 
-        getSupportActionBar().setTitle("Pass It On");
     }
 }
 
