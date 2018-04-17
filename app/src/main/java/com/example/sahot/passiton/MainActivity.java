@@ -5,6 +5,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -51,10 +52,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setLogo(R.drawable.technovationlogo);
-        getSupportActionBar().setDisplayUseLogoEnabled(true);
-
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        getSupportActionBar().setLogo(R.drawable.technovationlogo);
+//        getSupportActionBar().setDisplayUseLogoEnabled(true);
+//
 
         getSupportActionBar().setTitle("Pass It On");
 
@@ -64,5 +65,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+//
+//        if (id == R.id.gea) {
+//            startActivity(new Intent(MainActivity.this, SettingsActivity.class));
+//
+//        }
+
+        if (id == R.id.action_favorite) {
+            startActivity(new Intent(MainActivity.this, SettingsActivity.class));
+
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     }
