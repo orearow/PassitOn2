@@ -24,5 +24,6 @@ public class pictures_cultural extends AppCompatActivity {
             }
         });
 
+        getSupportActionBar().setTitle("Pass It On");
     }
 }

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "705065895762",
+    "firebase_url": "https://passiton2backup1.firebaseio.com",
+    "project_id": "passiton2backup1",
+    "storage_bucket": "passiton2backup1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705065895762:android:efa4e38dc50ecde6",
+        "android_client_info": {
+          "package_name": "com.example.sahot.passiton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705065895762-ib43pn9d2qrvb2side58cr5j2kjtd1em.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sahot.passiton",
+            "certificate_hash": "9539ad532b6659ab24e96fecc3601843623b5c74"
+          }
+        },
+        {
+          "client_id": "705065895762-5t1riaadi3acgufjn12uum7huu3cdos5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY5CT3qvPqCcSKUe8Y7hlGO4Fwl5sJxv8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705065895762-5t1riaadi3acgufjn12uum7huu3cdos5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

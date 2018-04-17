@@ -14,6 +14,8 @@ public class Contactowner extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contactowner);
 
+        getSupportActionBar().setTitle("Pass It On");
+
 
 
 

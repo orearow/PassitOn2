@@ -24,7 +24,7 @@ public class Mainpitchdescription extends AppCompatActivity {
             }
         });
 
-
+        getSupportActionBar().setTitle("Pass It On");
 
     }
 }

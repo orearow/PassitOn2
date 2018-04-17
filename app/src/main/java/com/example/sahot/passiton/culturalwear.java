@@ -9,5 +9,10 @@ public class culturalwear extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_culturalwear);
+
+        getSupportActionBar().setTitle("Pass It On");
+
     }
+
+
 }
