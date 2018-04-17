@@ -13,12 +13,20 @@ public class RecentUploadsDescriptionOpen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recent_uploads_description_open);
 
-        getSupportActionBar().setTitle("Pass It On");
 
+        Button newButton = (Button) findViewById(R.id.button8);
+
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RecentUploadsDescriptionOpen.this, Mainpitchdescription.class));
+                //startActivity(new Intent(MainActivity.this, RecentUploads.class));
+            }
+        });
+
+
+
+
+
+    }
 }
-        };
-
-
-
-
-

@@ -15,7 +15,6 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.412"
@@ -87,7 +86,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="#ffb16d"
-        android:text="children's costumes"
+        android:text="grad wear"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
@@ -105,7 +104,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="#ffb16d"
-        android:text="Maternity wear"
+        android:text="children suits"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.102"
@@ -123,18 +122,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="#ffb16d"
-        android:text="uniforms"
+        android:text="uiform"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.978" />
-<<<<<<< HEAD
     />
-=======
-
-
->>>>>>> 13f970599045479732c8c19d3a074bae8c321fd3
 
 </android.support.constraint.ConstraintLayout>
